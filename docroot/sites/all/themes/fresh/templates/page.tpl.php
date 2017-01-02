@@ -65,15 +65,7 @@
  */
 ?>
 <?php if (theme_get_setting('social_links', 'fresh')): ?>
-<div id="topbar">
-<div class="feedlist">
-  <ul>
-    <li><a href="<?php print $front_page; ?>rss.xml">RSS</a></li>
-    <li><a href="http://www.facebook.com/<?php echo check_plain(theme_get_setting('facebook_username', 'fresh')); ?>" target="_blank" rel="me">Facebook</a></li> 
-    <li><a href="http://www.twitter.com/<?php echo check_plain(theme_get_setting('twitter_username', 'fresh')); ?>" target="_blank" rel="me">Twitter</a></li>
-  </ul>
-</div>
-</div>
+
 <?php endif; ?>
 <div id="masthead">
   <div id="top">
@@ -115,9 +107,9 @@
     <div id="nivo-cover">
       <div id="nivo-box">
       <div id="slider" class="nivoSlider">
-      <a href="<?php print url($url1); ?>"><img class="slideimg" src="<?php print base_path() . drupal_get_path('theme', 'fresh') . '/images/slide-image-1.jpg'; ?>"/></a>
-      <a href="<?php print url($url2); ?>"><img class="slideimg" src="<?php print base_path() . drupal_get_path('theme', 'fresh') . '/images/slide-image-2.jpg'; ?>"/></a>
-      <a href="<?php print url($url3); ?>"><img class="slideimg" src="<?php print base_path() . drupal_get_path('theme', 'fresh') . '/images/slide-image-3.jpg'; ?>"/></a>
+      <a href="<?php print url($url1); ?>"><img class="slideimg" src="<?php print base_path() . drupal_get_path('theme', 'fresh') . '/images/IMG_0040.jpg'; ?>"/></a>
+      <a href="<?php print url($url2); ?>"><img class="slideimg" src="<?php print base_path() . drupal_get_path('theme', 'fresh') . '/images/IMG_0680.JPG'; ?>"/></a>
+      <a href="<?php print url($url3); ?>"><img class="slideimg" src="<?php print base_path() . drupal_get_path('theme', 'fresh') . '/images/IMG_0708.JPG'; ?>"/></a>
       </div>
       </div><!-- nivo-box -->
     </div> <!-- nivo-cover -->	
@@ -184,7 +176,6 @@
     <div id="copyright"><?php print t('Copyright'); ?> &copy; <?php echo date("Y"); ?>, <?php print $site_name; ?>.</div>
     <?php endif; ?>
     <?php if (theme_get_setting('footer_credits', 'fresh')): ?>
-    <div id="credits"><?php print t('Developed by'); ?> <a href="http://www.devsaran.com">Devsaran</a>.</div>
     <?php endif; ?>
   </div>
 </div>
