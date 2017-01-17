@@ -107,7 +107,7 @@
     <div id="nivo-cover">
       <div id="nivo-box">
       <div id="slider" class="nivoSlider">
-      <a href="<?php print url($url1); ?>"><img class="slideimg" src="<?php print base_path() . drupal_get_path('theme', 'fresh') . '/images/IMG_0040.jpg'; ?>"/></a>
+      <a href="<?php print url($url1); ?>"><img class="slideimg" src="<?php print base_path() . drupal_get_path('theme', 'fresh') . '/images/image-slider.jpeg'; ?>"/></a>
       <a href="<?php print url($url2); ?>"><img class="slideimg" src="<?php print base_path() . drupal_get_path('theme', 'fresh') . '/images/IMG_0680.JPG'; ?>"/></a>
       <a href="<?php print url($url3); ?>"><img class="slideimg" src="<?php print base_path() . drupal_get_path('theme', 'fresh') . '/images/IMG_0708.JPG'; ?>"/></a>
       </div>

@@ -60,6 +60,8 @@ function fresh_preprocess_page(&$vars) {
   else {
     $vars['secondary_menu'] = FALSE;
   }
+  // remove default message on homepage
+  unset($vars['page']['content']['system_main']);
 }
 
 /**
