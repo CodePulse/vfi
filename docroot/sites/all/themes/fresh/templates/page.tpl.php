@@ -69,21 +69,21 @@
 <?php endif; ?>
 <div id="masthead">
   <div id="top">
-    <div class="head">      
+    <div class="head">
     <?php if ($logo): ?>
        <div id="logo">
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" /></a>
         </div>
       <?php endif; ?>
       <h1 class="sitename"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></h1>
-  <div class="clear"></div>	
+  <div class="clear"></div>
     </div>
   </div>
-	
+
   <div id="botmenu">
     <a title="Home" href="<?php print $front_page; ?>" class="homemenu"> </a>
     <div id="submenu">
-    <?php 
+    <?php
     if (module_exists('i18n')) {
       $main_menu_tree = i18n_menu_translated_tree(variable_get('menu_main_links_source', 'main-menu'));
     } else {
@@ -97,10 +97,10 @@
 
 <div id="wrapper">
  <div id="casing">
-	
+
   <?php if ($is_front): ?>
   <?php if (theme_get_setting('slideshow_display', 'fresh')): ?>
-  <?php  
+  <?php
   $url1 = check_plain(theme_get_setting('slide1_url', 'fresh'));
   $url2 = check_plain(theme_get_setting('slide2_url', 'fresh'));
   $url3 = check_plain(theme_get_setting('slide3_url', 'fresh')); ?>
@@ -112,7 +112,7 @@
       <a href="<?php print url($url3); ?>"><img class="slideimg" src="<?php print base_path() . drupal_get_path('theme', 'fresh') . '/images/IMG_0708.JPG'; ?>"/></a>
       </div>
       </div><!-- nivo-box -->
-    </div> <!-- nivo-cover -->	
+    </div> <!-- nivo-cover -->
 
   <?php endif; ?>
   <?php endif; ?>
@@ -141,7 +141,7 @@
 
 <div class="clear"></div>
 <?php print render($page['footer']) ?>
-</div> 
+</div>
 </div>
 
 <div class="bottomcover">
@@ -167,8 +167,8 @@
     </div> <!-- / end fourth footer -->
   <?php endif; ?>
 <div class="clear"></div>
-</div> 
-</div> 
+</div>
+</div>
 
 <div id="footer">
   <div class="fcred">

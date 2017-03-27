@@ -61,7 +61,10 @@ function fresh_preprocess_page(&$vars) {
     $vars['secondary_menu'] = FALSE;
   }
   // remove default message on homepage
-  unset($vars['page']['content']['system_main']);
+  if(drupal_is_front_page()){
+    unset($vars['page']['content']['system_main']);
+
+  }
 }
 
 /**
